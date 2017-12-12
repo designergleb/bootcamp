@@ -1,0 +1,47 @@
+body {
+    width: 480px;
+}
+
+h1 {
+    font-family: Courier New, monospace;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+p {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.bigger-font-size {
+    font-size: 18px;
+}
+

@@ -1,0 +1,28 @@
+body {
+    background-color: #3f3f3f;
+}
+
+div {
+    position: relative;
+    width: 340px;
+    height: 180px;
+    background-color: #fff;
+    border-bottom: 3px solid #000;
+    text-align: center;
+}
+
+img {
+    padding: 20px 0 5px 0;
+    max-width: 298px;
+    max-height: 110px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover {
+    color: cyan;
+}
