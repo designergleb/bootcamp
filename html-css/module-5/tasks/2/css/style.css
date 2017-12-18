@@ -5,14 +5,20 @@
 
 body {
 	background-color: #3f3f3f;
-	font-size: 0;
+    font: normal 13px/1.8 Arial, sans-serif;
 }
 
 .wrapper {
 	width: 1180px;
 	background-color: #fff;
 	margin: 0 auto;
-	padding: 40px;
+	padding: 20px 40px 40px 40px;
+}
+
+h2 {
+    font: bold 21px Arial, sans-serif;
+    color: #000;
+    margin: 20px 0;
 }
 
 .task {	margin: 0 0 30px 0; }
@@ -28,7 +34,6 @@ body {
 	display: block;
 	padding: 0 15px;
 	height: 100%;
-	font: normal 13px Arial, sans-serif;
 	line-height: 30px;
 	color: #2e3192;
 	text-decoration: none;
@@ -53,7 +58,6 @@ body {
 	display: block;
 	padding: 0 15px;
 	height: 100%;
-	font: bold 13px Arial, sans-serif;
 	line-height: 30px;
 	color: #fff;
 	text-decoration: none;
@@ -92,3 +96,98 @@ body {
 }
 
 .style-3 a:hover { background-color: #ec3200; }
+
+
+
+.first-letter p {
+    font: normal 13px Arial, sans-serif;
+    color: #999;
+}
+
+.first-letter p:first-letter {
+    font: normal 21px/1.8 Arial, sans-serif;
+    color: #ec3200;
+    font-style: italic;
+}
+
+
+.first-line p {
+    color: #999;
+}
+
+.first-line p:first-line {
+    color: #ec3200;
+    font-style: italic;
+}
+
+.selection p::selection {
+    color: #fff;
+    background-color: #197b30;
+}
+
+
+.focus input {
+    box-sizing: border-box;
+    display: block;
+    width: 150px;
+    height: 25px;
+    margin: 10px 0;
+    border: 1px solid #197b30;
+    color: #333;
+    padding: 0 0 0 5px;
+}
+
+.focus input:nth-child(1):focus {
+    color: #197b30;
+}
+
+.focus input:nth-child(2):focus {
+    outline: none;
+    box-shadow: 0 0 5px #fc9e00;
+    border: 1px solid #fc9e00;
+    color: #fc9e00;
+}
+
+.focus input:nth-child(3):focus {
+    width: 300px;
+    outline: none;
+    border-left: 3px solid #a7a7a7;
+    border-top: 3px solid #a7a7a7;
+    border-right: 3px solid #c6c6c6;
+    border-bottom: 3px solid #c6c6c6;
+    box-shadow: 0 0 5px #c6c6c6;
+    padding: 0 0 0 3px;
+}
+
+
+.before-after p:before {
+    content: 'Before: ';
+    color: #197b30;
+}
+.before-after p:after {
+    content: ' :After';
+    color: #88292F;
+}
+
+
+.nth ol,
+.nth ul {
+    margin: 0 0 20px 20px;
+}
+
+.nth-1 li:nth-child(3n) {
+    color: #ec008c;
+}
+
+.nth-2 li:nth-child(odd) {
+    color: #ec008c;
+}
+
+.nth-2 li:nth-child(even) {
+    color: #197b30;
+}
+
+.nth-3 li:nth-child(3) {
+    color: #ec008c;
+}
+
