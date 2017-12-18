@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #3f3f3f;
+	font-size: 0;
+}
+
+.wrapper {
+	width: 1180px;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+h2 {
+	font: bold 20px Arial, sans-serif;
+	color: #3f3f3f;
+	margin: 0 0 15px 0;
+}
+
+.task {
+	margin: 0 0 30px 0;
+}
+
+ul {
+	list-style: none;
+	background-color: #d9e5e8;
+	height: 40px;
+}
+
+.inline-block li {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.float li,
+.nth li {
+	float: left;
+	margin: 0 15px;
+	border-radius: 20px;
+}
+
+.float:after,
+.nth:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.inline-block a,
+.float a,
+.nth a {
+	font: normal 14px Arial, sans-serif;
+	color: #0000ff;
+	text-decoration: none;
+	line-height: 40px;
+}
+
+.inline-block a:hover,
+.float a:hover,
+.nth a:hover {
+	color: #00bff3;
+	text-decoration: none;
+	border-bottom: 1px solid #00bff3;
+}
+
+.nth {
+	background-color: unset;
+}
+
+.nth li {
+	margin: 0 20px 0 0;
+	padding: 0 20px;
+}
+
+.nth li:nth-child(3n+1) {
+	 background-color: #88292F;
+ }
+
+.nth li:nth-child(3n+2) {
+	background-color: #5DB7DE;
+}
+
+.nth li:nth-child(3n+3) {
+	background-color: #0D5D56;
+}
+
+.nth a {
+	color: #0E1116;
+}
+
+.nth a:hover {
+	color: #fff;
+	border: none;
+}
+
+.nth a::before {
+	content: "\2192";
+	margin: 0 5px 0 0;
+}
+
+p {
+	font: normal 14px/1.8 Arial, sans-serif;
+	color: #999;
+	margin: 20px 0 0 0;
+}
+
