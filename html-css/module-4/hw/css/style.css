@@ -87,6 +87,8 @@ li {
     background-position: left 8px;
     background-size: 10px 7px;
     padding-left: 20px;
+    display: inline-block;
+    width: 100%;
 }
 
 .aside {
