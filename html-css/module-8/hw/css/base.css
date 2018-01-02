@@ -1,38 +1,38 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .wrapper {
-    background-image: url('../img/page-bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 1.375rem 0;
+  background-image: url('../img/page-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.375rem 0;
 }
 
 .container {
-    min-width: 30rem;
-    max-width: 64rem;
-    margin: 0 auto;
-    /*height: 2130px;*/
+  min-width: 30rem;
+  max-width: 64rem;
+  margin: 0 auto;
+  /*height: 2130px;*/
 }
