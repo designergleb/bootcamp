@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Acrom';
+    src: url("../fonts/Acrom W00 Regular.otf");
+}
+
+@font-face {
+    font-family: 'AcromBold';
+    src: url("../fonts/Acrom W00 Bold.otf");
+}
+
+@font-face {
+    font-family: 'AcromExtraBold';
+    src: url("../fonts/Acrom W00 ExtraBold.otf");
+}
+
+.wrapper {
+    min-width: 320px;
+    max-width: 1140px;
+    padding: 50px 20px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.title {
+    font-family: "Acrom ExtraBold", sans-serif;
+    font-size: 48px;
+    line-height: 52px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.c-sphere__number {
+    font-family: "Acrom ExtraBold", sans-serif;
+    font-size: 24px;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.c-sphere__text {
+    font-family: "AcromBold", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+}
+
+.c-sphere__text-info {
+    font-family: "Acrom", sans-serif;
+    font-size: 16px;
+    color: #999;
+    line-height: 20px;
+    padding-bottom: 30px;
+}
+
+.c-sphere-gallery__img {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+
+    .c-sphere {
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 30px;
+    }
+
+    .c-sphere__item {
+        flex-basis: 28%;
+        padding-right: 5%;
+    }
+
+    .c-sphere__item:nth-child(3) {
+        padding-right: 0;
+    }
+
+    .title {
+        margin-top: -7px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .c-sphere-gallery__img {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 32%;
+        width: 400px;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        padding-left: 20%;
+    }
+
+    .c-sphere__item {
+        position: relative;
+        padding-top: 30px;
+    }
+
+    .c-sphere__item:before {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: #000;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media (min-width: 1170px) {
+    .c-sphere-gallery__img {
+        width: 476px;
+        top: 30px;
+    }
+}

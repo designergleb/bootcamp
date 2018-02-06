@@ -1,0 +1,39 @@
+.box {
+    width: $width;
+    height: $height;
+    background-color: $color;
+
+    &-item {
+        font-size: 20px;
+        color: red;
+    }
+
+    &-link {
+        font-size: 30px;
+        color: green;
+        text-decoration: none;
+    }
+}
+
+%main-set {
+    background-color: $main-color;
+    width: 80%;
+    height: 100px;
+}
+
+.box2 {
+    @extend %main-set;
+}
+
+@for $i from 1 through 10 {
+    .box-#{$i} {
+        font-size: 10px;
+    }
+}
+
+.box1 {
+    width: $width;
+    height: $height;
+    background-color: #0b115b;
+    color: #fff;
+}

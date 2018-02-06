@@ -1,38 +1,74 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
+    font: normal 13px Arial, sans-serif;
+    padding: 0 0 12px 0;
+    line-height: 21px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #263555;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+}
+
+p,
+.sub-title,
+.testimonial-name {
+    font: normal .75rem Arial, sans-serif;
+    color: #4e5050;
+    line-height: 1.125rem;
+}
+
+.p__regular {
+    margin: 0 0 1.5rem 0;
+}
+
+.p__emphasis,
+.sub-title,
+.testimonial-name {
+    font-size: .875rem;
+    color: #263555;
+    margin: 0 0 1rem;
+    font-weight: 600;
 }
 
 .wrapper {
-  background-image: url('../img/page-bg.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 1.375rem 0;
+    background-image: url('../img/page-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.375rem 0;
 }
 
 .container {
-  min-width: 30rem;
-  max-width: 64rem;
-  margin: 0 auto;
-  /*height: 2130px;*/
+    min-width: 30rem;
+    max-width: 64rem;
+    margin: 0 auto;
+    /*height: 2130px;*/
 }
+
+.title {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1.75rem;
+    color: #263555;
+    text-transform: uppercase;
+    margin: 4rem 0 2rem 0;
+}
+

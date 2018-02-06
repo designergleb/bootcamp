@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+
+.box,
+.box2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.picture {
+    width: 45%;
+    margin-bottom: 50px;
+}
+
+.picture:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}

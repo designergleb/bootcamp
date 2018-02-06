@@ -24,7 +24,7 @@ footer {
     justify-content: center;
     width: 100%;
     position: relative;
-    background: linear-gradient(to right, rgba(9,5,47,0.9) 0%,rgba(49,29,94,0.9) 100%);
+    background: linear-gradient(to right, rgba(9, 5, 47, 0.9) 0%, rgba(49, 29, 94, 0.9) 100%);
 }
 
 article:nth-child(even) {
@@ -115,7 +115,7 @@ header ul {
 }
 
 header nav li {
-    margin: 0 0 0 15px;
+    margin: 0 0 0 8px;
 }
 
 header nav a,
@@ -126,12 +126,17 @@ header nav a,
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 1px;
+    padding: 4px 8px;
+    position: relative;
+    z-index: 1;
+    background: var(--color-3) -10px 0;
 }
 
-header nav a:hover,
-.footer-nav a:hover,
-.link-1:hover {
-    opacity: .7;
+header nav a:hover:after,
+.footer-nav a:hover:after,
+.link-1:hover:after {
+    top: 0;
+    opacity: 1;
 }
 
 header nav a.selected {
@@ -170,7 +175,7 @@ header nav a.selected {
     height: 10px;
     border-radius: 100%;
     border: 1px solid #c2c2c2;
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .pagination a {
@@ -184,7 +189,7 @@ header nav a.selected {
     border-radius: 100%;
 }
 
-.pagination a:hover{
+.pagination a:hover {
     background-color: var(--color-3);
 }
 
@@ -327,7 +332,6 @@ li.pagination-selected {
     background-position: -328px -10px;
 }*/
 
-
 .expertise .wrapper {
     display: flex;
     flex-direction: column;
@@ -429,13 +433,13 @@ li.pagination-selected {
     background-position: -188px -10px;
 }
 
-.expertise tr:first-child td:nth-child(3) h3:before{
+.expertise tr:first-child td:nth-child(3) h3:before {
     width: 28px;
     height: 50px;
     background-position: -10px -10px;
 }
 
-.expertise tr:last-child td:nth-child(1) h3:before{
+.expertise tr:last-child td:nth-child(1) h3:before {
     width: 50px;
     height: 50px;
     background-position: -258px -10px;
@@ -490,7 +494,7 @@ li.pagination-selected {
 
 .team div:last-child {
     padding: 17px 20px 23px 20px;
-    border: 1px solid rgba(225,225,225,.5);
+    border: 1px solid rgba(225, 225, 225, .5);
 }
 
 .team img {
@@ -569,7 +573,7 @@ li.pagination-selected {
     position: relative;
 }
 
-.our-work li a:hover {
+.our-work li a:hover img {
     opacity: .5;
 }
 
@@ -750,7 +754,7 @@ li.pagination-selected {
     margin: 0 0 30px 0;
 }
 
-.contacts ul{
+.contacts ul {
     display: flex;
     flex-wrap: wrap;
     width: 380px;
@@ -848,7 +852,7 @@ footer .wrapper {
 .footer-info input[type='email'] {
     height: 45px;
     background: none;
-    border: 1px solid rgba(255,255,255,.5);
+    border: 1px solid rgba(255, 255, 255, .5);
     padding: 15px;
     flex-basis: 70%;
     font: 300 13px 'Roboto', sans-serif;
@@ -866,7 +870,7 @@ footer .wrapper {
     align-items: center;
     height: 45px;
     flex-basis: 25%;
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255, 255, 255, .5);
     border: none;
 }
 
@@ -878,7 +882,7 @@ footer .wrapper {
 }
 
 .footer-info button:hover {
-    background-color: rgba(255,255,255,.7);
+    background-color: rgba(255, 255, 255, .7);
     cursor: pointer;
 }
 
