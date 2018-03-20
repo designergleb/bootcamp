@@ -1,0 +1,7 @@
+.input {
+    border: 1px solid #bababa;
+}
+
+.input__error {
+    border: 1px solid #ff000b;
+}

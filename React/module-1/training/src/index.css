@@ -1,106 +1,21 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
 
-.container {
-    position: relative;
-    border-radius: 5px;
-    border: 1px solid #f0f0f0;
-    width: 35%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 40px;
-    font-family: Roboto, sans-serif;
+@font-face {
+  src: url("./assets/fonts/Montserrat-Bold.ttf");
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+@font-face {
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
+  font-family: 'Montserrat';
+  font-weight: 400;
 }
 
-.title {
-    font-size: 27px;
-    color: #222;
-    padding: 0 0 32px 0;
+@font-face {
+  src: url("./assets/fonts/Chivo-Regular.ttf");
+  font-family: 'Chivo';
+  font-weight: 400;
 }
-
-.dropdown {
-    width: 65%;
-    margin: 0 auto;
-    text-align: left;
-    transition: all .250ms;
-}
-
-.dropdown__main {
-    position: relative;
-    padding: 10px 15px 12px 15px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #f0f0f0;
-}
-
-.dropdown__main:after {
-    content: "";
-    display: block;
-    width: 5px;
-    height: 5px;
-    border-bottom: 3px solid #434343;
-    border-right: 3px solid #434343;
-    transform: rotate(45deg);
-    position: absolute;
-    right: 15px;
-    bottom: 18px;
-}
-
-.dropdown__main:hover {
-    cursor: pointer;
-    background-color: #f8f8f8;
-}
-
-.dropdown__list {
-    display: block;
-    height: auto;
-    opacity: 1;
-    margin: 10px 0 0 0;
-    padding: 10px 0;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #f0f0f0;
-}
-
-.dropdown__list-closed {
-    display: none;
-}
-
-.dropdown__item {
-    margin: 0;
-    line-height: 24px;
-    padding: 8px 15px 10px 15px;
-}
-
-.dropdown__item:hover {
-    cursor: pointer;
-    background-color: #f8f8f8;
-}
-
-.btn {
-    min-width: 100px;
-    background-color: #03B4DE;
-    padding: 10px 15px 12px 15px;
-    border: 1px solid #089bde;
-    border-radius: 5px;
-    font-size: 15px;
-    color: #fff;
-    margin: 40px 0 0 0;
-}
-
-.btn:hover {
-    cursor: pointer;
-    background-color: #03c6f3;
-}
-
-.message {
-    margin: 12px 0 0 0;
-    min-height: 32px;
-    line-height: 32px;
-    font-size: 14px;
-    color: #48d530;
-}
-
